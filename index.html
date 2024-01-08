@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR PODS</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="air.jpg" alt="">
+        </div>
+      
+        <div class="title">
+             <p> AIR PODS</p> 
+            <span>iOS 15</span>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="title2">
+            <span>Experience<br> Deeper bas<br>Lesser Noice</span>
+        </div>
+    
+        <div class="img2">
+            <img src="second.png" alt="">
+        </div>
+     
+     </div>
+     <div class="container3">
+      
+       
+         <div class="title3">
+              <p> </p> 
+             <span>BUILT FOR<br>EVERYONE</span><br>
+             <span>SOLID <br> SOUND</span>
+     </div>
+    
+     <div class="img3">
+         <img src="2.jpg" alt="">
+     </div>
+  
+  </div>
+
+  <script>
+   
+    TweenMax.from(".title2",1, {
+        opacity: 0,
+        delay: 4,
+        y: 20,
+        repeat:screenY,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".img",3, {
+        opacity: 0,
+        delay: .8,
+        y: -1000,
+        
+        ease: Expo.easeInOut
+    })
+
+  
+    
+    </script>
+    <script type="text/javascript">
+      
+      gsap.timeline({
+        scrollTrigger:{
+            trigger:".container2",
+            start:"center right",
+            end:"left ",
+           // markers:true,
+            scrub:true ,
+            //pin:true
+        }
+      })
+
+      gsap.timeline({
+        scrollTrigger:{
+            trigger:".container3",
+            start:"center right",
+            end:"left ",
+           // markers:true,
+            scrub:true ,
+            //pin:true
+        }
+      })
+      .from(".img3",{x : innerWidth*1})
+</script>
+   
+</body>
+
+</html>
