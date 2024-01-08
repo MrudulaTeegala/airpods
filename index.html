@@ -54,6 +54,14 @@
   </div>
 
   <script>
+    TweenMax.from(".title",1, {
+        opacity: 0,
+        delay: 0.8,
+        y: 20,
+        repeat:screenY,
+        ease: Expo.easeInOut
+    })
+
    
     TweenMax.from(".title2",1, {
         opacity: 0,
