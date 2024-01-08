@@ -9,7 +9,7 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     font-family: poppins;
     background-color: #000;
@@ -19,7 +19,7 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     font-family: poppins;
     background-color: #000;
@@ -27,8 +27,8 @@ html,body{
 .container{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: 94vh;
     overflow: hidden;
     font-family: poppins;
     background-color: #000;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 155px;
     /* text-align: right; */
-    left: 54%;
+    left: 64%;
     line-height: 0.8;
     font-size: 100px;
     font-weight: 550;
@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
 .title2 {
     position: fixed;
     position: absolute;
-    top: 590px;
+    top: 630px;
     left: 5%;
     line-height: 1;
     font-size: 90px;
